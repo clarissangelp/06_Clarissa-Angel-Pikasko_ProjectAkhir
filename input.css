@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* WRAPPER — AGAR FOOTER SELALU DI BAWAH */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    background: url('regis1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+
+nav {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+
+.container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 40px 60px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+    width: 450px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    margin: 150px auto 40px auto;   /* JARAK DARI NAVBAR ATAS */
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #c0c0c0;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+    color: #f0f0f0;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    background-color: #333;
+    box-shadow: 0 0 8px rgba(200, 200, 200, 0.3);
+}
+
+
+.btn {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #777;
+    transform: scale(1.05);
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ccc;
+    z-index: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    td {
+        display: block;
+        text-align: left;
+    }
+}

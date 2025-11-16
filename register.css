@@ -1,0 +1,200 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background: #111;
+    overflow-x: hidden;
+}
+
+
+nav {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff0fbf;
+}
+
+
+.container {
+    display: flex;
+    height: calc(100vh - 80px); 
+    width: 100vw;
+    margin-top: 80px; 
+}
+
+
+.left {
+    flex: 1.5;
+    background-image: url('regis1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.left::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+    color: white;
+    z-index: 2;
+}
+
+.text-box h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 18px;
+    width: 420px;
+    line-height: 1.5;
+}
+
+
+.right {
+    flex: 0.9; 
+    background: #111;
+    color: white;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.right p {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.right a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+
+form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #1b1b1b;
+    color: white;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #61a8ff;
+    border: none;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #4b8ad6;
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .left {
+        height: 300px;
+    }
+
+    .text-box {
+        bottom: 40px;
+        left: 30px;
+        width: auto;
+    }
+
+    .right {
+        padding: 40px 30px;
+    }
+
+    .right h2 {
+        font-size: 24px;
+    }
+
+    .text-box h1 {
+        font-size: 30px;
+    }
+
+    .text-box p {
+        font-size: 16px;
+    }
+}

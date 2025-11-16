@@ -1,0 +1,225 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+nav {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #fff;
+    border-radius: 7px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff0fbf;
+}
+
+
+.hero {
+    
+    margin: 0;
+    padding: 0;
+
+    background-image: url('lukisan1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+
+    padding-left: 60px;       
+    padding-top: 150px;         
+    padding-bottom: 150px;  
+    text-shadow: #000;
+
+}
+
+
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+
+
+.exhibitions-section {
+    padding: 40px;
+    background: #000;
+    color: white;
+}
+
+.exhibitions-section h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+
+.exhibitions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.exhibition-card {
+    background: #1a1a1a;
+    border-bottom: 4px solid #e10098; /* garis bawah pink kayak contoh */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background: #333;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #ff2ea1;
+    padding: 6px 14px;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+.card-content {
+    padding: 22px;
+}
+
+.category {
+    font-size: 14px;
+    color: #a8a8a8;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.date {
+    color: #2fd3c5; 
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer .desc {
+  color: #bbb;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #444;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.footer .social a {
+  color: #bbb;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.footer .social a:hover {
+  color: #ff1493; 
+}
+
+.footer .info {
+  color: #bbb;
+  margin: 5px 0;
+}
+
+.footer .info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .info a:hover {
+  color: #ff1493;
+}
+
+.footer .copy {
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
